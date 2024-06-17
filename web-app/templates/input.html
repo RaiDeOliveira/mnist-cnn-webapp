@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/input.css">
+</head>
+<body>
+    <div class="ConteudoGeral">
+        <h1>oiiiiiiii</h1>
+        <h2>Insira aqui a imagem com número para ser analisada pela IA:</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="imgInput">
+            <button type="submit">ENVIAR</button>
+        </form>
+
+        {% if prediction is not none %}
+            <h3>Predição: {{ prediction }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
