@@ -21,7 +21,7 @@ Esta rota permite ao usuário enviar uma imagem contendo um número manuscrito p
 **POST Request:**
 - Verifica se um arquivo foi enviado e se não está vazio.
 - Salva o arquivo no diretório temporário `./temp`.
-- Carrega o modelo pesos.h5.
+- Carrega o modelo `pesos.h5`.
 - Carrega a imagem salva, converte para escala de cinza, redimensiona para 28x28 pixels, normaliza e aplica um limiar binário.
 - Realiza a predição utilizando o modelo carregado.
 - Renderiza a página `input_cnn.html` mostrando a predição do número detectado.
@@ -41,7 +41,7 @@ Esta rota permite ao usuário enviar uma imagem contendo um número manuscrito p
 **POST Request:**
 - Verifica se um arquivo foi enviado e se não está vazio.
 - Salva o arquivo no diretório temporário `./temp`.
-- Carrega o modelo pesos.h5.
+- Carrega o modelo `pesos_linear.h5`.
 - Carrega a imagem salva, converte para escala de cinza, redimensiona para 28x28 pixels, normaliza e aplica um limiar binário.
 - Realiza a predição utilizando o modelo carregado.
 - Renderiza a página `input_lnn.html` mostrando a predição do número detectado.
