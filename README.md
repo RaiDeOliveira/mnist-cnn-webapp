@@ -64,7 +64,7 @@ Os resultados obtidos a partir do treinamento dos modelos envolvidos no projeto 
 
 <p style="text-align: center;">Figura 2 - Resultados do treinamento da Rede Neural Linear</p>
 
-![](assest/demo_lnn.png)
+![](assets/demo_lnn.png)
 
 <p style="text-align: center;">Fonte: Elaboração própria</p>
 
