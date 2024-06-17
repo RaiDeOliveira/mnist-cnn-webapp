@@ -1,6 +1,7 @@
 from tensorflow.keras.models import load_model
 import numpy as np
 import cv2
+import os
 
 from flask import Flask, render_template, request
 
@@ -60,7 +61,7 @@ def cnnInputPage():
     return render_template('input_cnn.html', prediction=prediction)
 
 
-@app.route('/input_nn', methods=['GET', 'POST'])
+@app.route('/input_lnn', methods=['GET', 'POST'])
 def nnInputPage():
     prediction = None
     if request.method == 'POST':
@@ -111,7 +112,7 @@ def nnInputPage():
         predicao = modelo_2.predict(img)
         prediction = np.argmax(predicao)
 
-    return render_template('input_nn.html', prediction=prediction)
+    return render_template('input_lnn.html', prediction=prediction)
 
 if __name__ == '__main__':
     os.makedirs('./temp', exist_ok=True)  # Cria o diretório temporário se não existir

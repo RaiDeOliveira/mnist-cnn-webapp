@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPool2D, Flatten, Dropout
-import numpy as np
 
 # Carregando o dataset MNIST e separando os dados de treino e de teste
 (x_treino, y_treino), (x_teste, y_teste) = mnist.load_data()
