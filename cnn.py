@@ -62,4 +62,4 @@ plt.ylabel('perda')
 plt.show()
 
 # Salvando o modelo
-model.save('pesos.h5')
+model.save('web-app/pesos.h5')
