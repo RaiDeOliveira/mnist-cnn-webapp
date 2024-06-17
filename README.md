@@ -20,11 +20,11 @@ Esta rota permite ao usuário enviar uma imagem contendo um número manuscrito p
 
 **POST Request:**
 - Verifica se um arquivo foi enviado e se não está vazio.
-- Salva o arquivo no diretório temporário ./temp.
+- Salva o arquivo no diretório temporário `./temp`.
 - Carrega o modelo pesos.h5.
 - Carrega a imagem salva, converte para escala de cinza, redimensiona para 28x28 pixels, normaliza e aplica um limiar binário.
 - Realiza a predição utilizando o modelo carregado.
-- Renderiza a página input_cnn.html mostrando a predição do número detectado.
+- Renderiza a página `input_cnn.html` mostrando a predição do número detectado.
 
 ### `/input_lnn` - Detecção de Algarismo com Rede Neural Linear
 
@@ -36,15 +36,15 @@ Esta rota permite ao usuário enviar uma imagem contendo um número manuscrito p
 #### Funcionamento:
 
 **GET Request:**
-- Exibe a página input_cnn.html com um formulário para o envio de uma imagem.
+- Exibe a página `input_lnn.html` com um formulário para o envio de uma imagem.
 
 **POST Request:**
 - Verifica se um arquivo foi enviado e se não está vazio.
-- Salva o arquivo no diretório temporário ./temp.
+- Salva o arquivo no diretório temporário `./temp`.
 - Carrega o modelo pesos.h5.
 - Carrega a imagem salva, converte para escala de cinza, redimensiona para 28x28 pixels, normaliza e aplica um limiar binário.
 - Realiza a predição utilizando o modelo carregado.
-- Renderiza a página input_cnn.html mostrando a predição do número detectado.
+- Renderiza a página `input_lnn.html` mostrando a predição do número detectado.
 
 ## Demonstrações
 
